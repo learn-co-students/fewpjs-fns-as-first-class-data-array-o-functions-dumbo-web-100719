@@ -37,8 +37,10 @@ routine.push(wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog)
 
 
 function exerciseDog(dogName, dogBreed) {
-    return routine.map(x => x(dogName, dogBreed))
+    return routine.map(funct => funct(dogName, dogBreed))
 }
+
+// x declares an anonymous function, the arrow function retains the same scope
 
 // routine.map do |function|
 // function(dogName, dogBreed)
