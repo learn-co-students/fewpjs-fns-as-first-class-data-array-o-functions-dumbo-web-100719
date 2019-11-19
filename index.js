@@ -30,5 +30,5 @@ function unleashDog(a,b){
 let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
 
 function exerciseDog(a,b){
-    return routine.forEach((val) => val(a,b));
+    return routine.map((val) => val(a,b));
 }
